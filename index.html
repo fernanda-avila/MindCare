@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
 </head>
 <body>
     <!-- Cabeçalho -->
@@ -15,7 +18,7 @@
         <div class="header-container">
             <nav class="nav-menu">
                 <div class="logo-container">
-                    <img src="imgs/baixados (2).png" alt="MindCare Logo" class="logo">
+                    <a href="index.html"><img src="imgs/logo.png" alt="MindCare Logo" class="logo"></a>
                 </div>
                 <ul>
                     <li><a href="#voce">Para você </a></li>
@@ -23,7 +26,7 @@
                 </ul>
                 <div class="nav-buttons">
                     <a href="#agendar" class="nav-agendar">Agendar consulta</a>
-                    <a href="#criar" class="nav-criar">Criar conta</a>
+                    <a href="cadastro.html" class="nav-criar">Criar conta</a>
                     <a href="#entrar" class="nav-entrar">Entrar</a>
                 </div>
             </nav>
@@ -40,7 +43,7 @@
                 <p class="subtitle">Cuidando da sua mente com carinho e atenção</p>
                 <div class="button-group">
                     <button id="login-btn" class="btn primary">Login</button>
-                    <button id="register-btn" class="btn secondary">Cadastrar</button>
+                    <a href="cadastro.html"><button id="register-btn" class="btn secondary">Cadastrar</button></a>
                 </div>
             </section>
 
@@ -54,7 +57,7 @@
         <section class="banner section-red" data-aos="fade-up" data-aos-duration="1000">
             <div class="banner-content">
                 <h2>Converse com Especialistas Agora</h2>
-                <button class="live-chat-button">Iniciar Chat Ao Vivo Agora!</button>
+                <a href="chat.html"><button class="live-chat-button">Iniciar Chat Ao Vivo Agora!</button></a>
                 <p>Converse com nossos especialistas 24/7 em tempo real</p>
             </div>
         </section>
@@ -86,14 +89,73 @@
                 </div>
             </div>
         </section>
-        <!-- Seção de Novos Cards -->
+
+        <section>
+        <div>
+            <h1 class="plan-title">Escolha Seu Plano</h1>
+            <p class="plan-subtitle">Escolha o plano que melhor se encaixa nas suas necessidades <br>
+                e comece a cuidar da sua saúde mental hoje mesmo.</p>
+        </div>
+
+  <!-- Swiper container -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <!-- Plano Básico -->
+      <div class="swiper-slide">
+        <div class="plan-name">Plano Básico</div>
+        <div class="plan-price">R$ 15,90/mês</div>
+        <div class="plan-details">
+          <p class="plan-details-item">Acesso a 3 sessões por mês</p>
+          <p class="plan-details-item">Suporte por chat</p>
+          <p class="plan-details-item">Relatórios mensais</p>
+        </div>
+        <button class="btn-plan">Assinar</button>
+      </div>
+
+      <!-- Plano Completo -->
+      <div class="swiper-slide">
+        <div class="plan-name">Plano Completo</div>
+        <div class="plan-price">R$ 39,90/mês</div>
+        <div class="plan-details">
+          <p class="plan-details-item">Acesso a 10 sessões por mês</p>
+          <p class="plan-details-item">Suporte por chat e telefone</p>
+          <p class="plan-details-item">Relatórios semanais</p>
+        </div>
+        <button class="btn-plan">Assinar</button>
+      </div>
+
+      <!-- Plano Premium -->
+      <div class="swiper-slide">
+        <div class="plan-name">Plano Premium</div>
+        <div class="plan-price">R$ 59,90/mês</div>
+        <div class="plan-details">
+          <p class="plan-details-item">Acesso ilimitado a sessões</p>
+          <p class="plan-details-item">Suporte 24/7 por chat e telefone</p>
+          <p class="plan-details-item">Relatórios personalizados</p>
+          <p class="plan-details-item">Prioridade no agendamento</p>
+        </div>
+        <button class="btn-plan">Assinar</button>
+      </div>
+    </div>
+    
+    <!-- Adicionar paginação -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  
+ 
+  </section>
+
+        <!-- Seção de Informações Adicionais -->
 <section class="additional-services">
     <div class="info-item" data-aos="fade-up" data-aos-duration="1000">
         <div class="info-content">
             <i class="fas fa-users info-icon"></i>
             <div class="info-text">
                 <h2>Sobre o Time</h2>
-                <p>Conheça a nossa equipe dedicada e apaixonada por ajudar você a alcançar o bem-estar mental.</p>
+                <p>Conheça a nossa equipe que está aqui para ajudar você a alcançar o bem-estar mental.</p>
             </div>
         </div>
     </div>
@@ -137,7 +199,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="https://kit.fontawesome.com/7b3b6f1d2f.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
     <script>
         AOS.init();
     </script>

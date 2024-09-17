@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindCare Chat</title>
+    <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+    <div class="chat-container">
+        <!-- Cabeçalho do chat com nome do colaborador e avatar -->
+        <div class="chat-header">
+            <div class="colaborador-info" id="colaborador-info">
+                <!-- Rosto do Chatbot -->
+                <img src="imgs/Chat bot-pana.png" alt="Avatar ChatBot" class="avatar-chatbot" id="chatbot-avatar">
+                <h2 id="colaborador-nome">MindBot</h2>
+            </div>
+        </div>
+
+        <!-- Área de mensagens -->
+        <div class="chat-messages" id="chat-messages">
+            <!-- Mensagens iniciais do MindBot -->
+            <div class="message received" id="bot-intro">
+                <p>Olá! Eu sou o MindBot. Qual é o seu nome?</p>
+            </div>
+        </div>
+
+        <!-- Botão para transição -->
+        <div class="chat-button" id="next-chat-button" style="display: none;">
+            <a href="chatColaborador.html"><button id="start-chat-button">Conectar com Colaborador</button></a>
+        </div>
+
+        <!-- Input de mensagens -->
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Digite sua resposta aqui...">
+            <button id="send-button">Enviar</button>
+        </div>
+    </div>
+
+    <script src="chat.js"></script>
+</body>
+</html>

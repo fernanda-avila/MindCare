@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindCare - Chat Colaborador</title>
+    <link rel="stylesheet" href="chatColaborador.css">
+</head>
+<body>
+    <div class="chat-container">
+        <!-- Cabeçalho do chat com nome do colaborador e avatar -->
+        <div class="chat-header">
+            <div class="colaborador-info">
+                <img src="imgs/Doctor-pana (2).png" alt="Avatar Colaborador" class="avatar-colaborador">
+                <h2 id="colaborador-nome">Dr. Ana Sousa</h2>
+            </div>
+            <div class="chat-actions">
+                <button id="audio-call-btn">🔊 Áudio</button>
+                <button id="video-call-btn">🎥 Vídeo</button>
+            </div>
+        </div>
+
+        <!-- Área de mensagens -->
+        <div class="chat-messages" id="chat-messages">
+            <!-- Mensagens trocadas com o colaborador -->
+            <div class="message received">
+                <p>Olá, sou a Dr. Ana. Como posso ajudar você hoje?</p>
+            </div>
+        </div>
+
+        <!-- Input de mensagens -->
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Digite sua mensagem...">
+            <button id="send-button">Enviar</button>
+        </div>
+    </div>
+
+    <script src="chatColaborador.js"></script>
+</body>
+</html>

@@ -1,3 +1,8 @@
+import Swiper from 'swiper/bundle';
+import 'swiper/swiper-bundle.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 // Inicialize o AOS
 AOS.init();
 
@@ -15,4 +20,20 @@ document.addEventListener('aos:in', ({ detail }) => {
     } else if (classes.contains('section-red')) {
         document.body.style.backgroundColor = '#ffebee';
     }
+});
+
+// swiper
+
+
+const swiper = new Swiper('.swiper-container', {
+  // Configurações do Swiper
+  loop: true, // loop dos slides
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
 });
