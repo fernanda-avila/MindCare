@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MindCare - Cuidando da Sua Mente</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/homeLogada.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js"></script>
 </head>
 
 <body>
@@ -28,11 +30,18 @@
                 </ul>
                 <div class="nav-buttons">
                     <a href="profissionais.html" class="nav-agendar">Agendar consulta</a>
-                    <a href="cadastro.html" class="nav-criar">Criar conta</a>
-                    <a href="login.html" class="nav-entrar">Entrar</a>
+                    <i class="fas fa-user user" id="user-icon"></i>
+                    <div class="dropdown" id="user-dropdown">
+                        <div class="user-info">
+                            <strong>Premium <span class="star">★</span></strong>
+                            <p>Consultas Agendadas: 5</p>
+                            <p>Plano: Premium</p>
+                            <p>Email: usuario@exemplo.com</p>
+                            <p>Próxima Consulta: 30/09/2024</p>
+                        </div>
+                    </div>
                 </div>
             </nav>
-
         </div>
     </header>
 
@@ -64,82 +73,16 @@
             </div>
         </section>
 
-        <!-- Seção de Temas com Imagens e Textos -->
-        <section class="services" data-aos="fade-up" data-aos-duration="1000">
-            <div class="service-item section-yellow">
-                <img src="imgs/Webinar-pana.png" alt="Chat Online 24/7" class="service-image">
-                <div class="service-text">
-                    <h2>Chat Online 24/7</h2>
-                    <p>Converse em tempo real com especialistas ou nossa IA treinada. Estamos disponíveis para você, dia
-                        e noite, oferecendo apoio emocional sempre que precisar.</p>
-                </div>
+        <!-- Calendário Fofo com Agenda de Consultas -->
+        <h2 class="calendar-title">Seu Calendário de Consultas</h2>
+        <section class="calendar-section" data-aos="fade-up" data-aos-duration="1000">
+            <div class="aside-container">
             </div>
+            <div class="calendar-container">
+                <div id="calendar"></div>
+            </div>
+            <img src="imgs/Schedule-amico (1).png" alt="Imagem do Calendário" class="calendar-aside-img">
         </section>
-        <div class="service-item section-green" data-aos="fade-up" data-aos-duration="1000">
-            <img src="imgs/Online Doctor-cuate (3).png" alt="Consultas Personalizadas" class="service-image">
-            <div class="service-text">
-                <h2>Consultas Personalizadas</h2>
-                <p>Oferecemos consultas periódicas com profissionais especializados. Cadastre-se e crie um plano de acompanhamento que
-                    se encaixe nas suas necessidades.</p>
-
-                    <a href="cadastro.html"><button class="cadastro-card-button">Cadastre-se agora mesmo!</button></a>
-            </div>
-
-        </div>
-
-        <div class="service-item section-blue" data-aos="fade-up" data-aos-duration="1000">
-            <img src="imgs/Doctor-amico (1).png" alt="Profissionais Qualificados" class="service-image">
-            <div class="service-text">
-                <h2>Profissionais Qualificados</h2>
-                <p>Nossa rede de profissionais especializados abrange diversas áreas da saúde mental, prontos para
-                    ajudar com o que você precisa.</p>
-            </div>
-        </div>
-        </section>
-
-        <section class="plan-title">Nossos Planos</section>
-<section class="plan-subtitle">
-    Escolha o plano que melhor se adapta às suas necessidades se quiser se cadastrar para consultas <br>recorrentes e fazer um acompanhamento com nossos profissionais parceiros!
-</section>
-
-<div class="plans-container">
-    <!-- Plano Básico -->
-    <div class="plan-card basic-plan">
-        <div class="plan-name">Plano Básico</div>
-        <div class="plan-price">R$ 15,90/mês</div>
-        <div class="plan-details">
-            <p class="plan-details-item">Acesso a 3 sessões por mês</p>
-            <p class="plan-details-item">Suporte por chat</p>
-            <p class="plan-details-item">Relatórios mensais</p>
-        </div>
-        <button class="btn-plan">Assinar</button>
-    </div>
-
-    <!-- Plano Completo - Destaque -->
-    <div class="plan-card recommended-plan">
-        <div class="plan-recommended">Recomendado</div>
-        <div class="plan-name">Plano Completo</div>
-        <div class="plan-price">R$ 39,90/mês</div>
-        <div class="plan-details">
-            <p class="plan-details-item">Acesso a 10 sessões por mês</p>
-            <p class="plan-details-item">Suporte por chat e telefone</p>
-            <p class="plan-details-item">Relatórios semanais</p>
-        </div>
-        <button class="btn-plan">Assinar</button>
-    </div>
-
-    <!-- Plano Premium -->
-    <div class="plan-card premium-plan">
-        <div class="plan-name">Plano Premium</div>
-        <div class="plan-price">R$ 59,90/mês</div>
-        <div class="plan-details">
-            <p class="plan-details-item">Acesso ilimitado a sessões</p>
-            <p class="plan-details-item">Relatórios personalizados</p>
-            <p class="plan-details-item">Prioridade no agendamento</p>
-        </div>
-        <button class="btn-plan">Assinar</button>
-    </div>
-</div>
 
         <!-- Seção de Informações Adicionais -->
         <section class="additional-services">
@@ -158,8 +101,7 @@
                     <i class="fas fa-handshake info-icon"></i>
                     <div class="info-text">
                         <h2>Seja um Profissional Parceiro</h2>
-                        <p>Junte-se à nossa rede de profissionais qualificados e faça a diferença na vida das pessoas.
-                        </p>
+                        <p>Junte-se à nossa rede de profissionais qualificados e faça a diferença na vida das pessoas.</p>
                     </div>
                 </div>
             </div>
@@ -169,8 +111,7 @@
                     <i class="fas fa-question-circle info-icon"></i>
                     <div class="info-text">
                         <h2>FAQ</h2>
-                        <p>Encontre respostas para as perguntas mais frequentes sobre nossos serviços e como podemos
-                            ajudar.</p>
+                        <p>Encontre respostas para as perguntas mais frequentes sobre nossos serviços e como podemos ajudar.</p>
                     </div>
                 </div>
             </div>
@@ -189,7 +130,7 @@
                 <li><a href="#terms">Termos de Serviço </a></li>
                 <li><a href="#privacy"> Política de Privacidade</a></li>
             </ul>
-
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
@@ -197,21 +138,23 @@
     <script>
         AOS.init();
 
+        $(document).ready(function() {
+            $('#calendar').fullCalendar({
+                header:
+                { left: 'prev,next today', center: 'title', right: 'month,agendaWeek,agendaDay' },
+                editable: true,
+                events: [
+                    { title: 'Consulta com Dr. João', start: '2024-09-30T10:00:00', end: '2024-09-30T11:00:00' },
+                    { title: 'Consulta com Dra. Maria', start: '2024-10-02T14:00:00', end: '2024-10-02T15:00:00' }
+                ]
+            });
+
+            // Dropdown de usuário
+            $('#user-icon').on('click', function() {
+                $('#user-dropdown').toggle();
+            });
+        });
     </script>
     <script type="module" src="scriptHome.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper('.swiper-container', {
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            slidesPerView: 'auto',
-            spaceBetween: 30,
-        });
-
-        </script>
-
 </body>
-
 </html>

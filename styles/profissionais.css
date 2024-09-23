@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo {
+    width: 150px;
+}
+
+.nav-menu {
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #F2F2F2;
+    padding: 20px;
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+    font-weight: 500;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-buttons a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.nav-entrar {
+    background-color: transparent;
+    color: #FF7043;
+}
+
+.container {
+    display: flex;
+    padding: 50px 20px;
+}
+
+.main-content {
+    flex: 2;
+    margin-left: 10%;
+}
+
+aside {
+    width: 600px;
+}
+.aside-img {
+    width: 600px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.profissionais-lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex: 1;
+    margin-top: 30px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+    width: 250px;
+    height: 350px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.profissional-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+h3 {
+    margin: 10px 0;
+}
+
+.especialidade {
+    color: #666;
+}
+
+.descricao {
+    color: #555;
+    margin: 10px 0;
+}
+
+.agendar-btn {
+    background-color: #FF7043;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.agendar-btn:hover {
+    background-color: #e05a31;
+}
+
+footer {
+    background-color: #f2f2f2;
+    color: #666;
+    padding: 20px;
+    text-align: center;
+}

@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #F9F9F9;
+}
+
+header {
+    background-color: #F2F2F2;
+    padding: 20px 0;
+}
+
+.nav-menu {
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-buttons a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.nav-entrar {
+    background-color: transparent;
+    color: #FF7043;
+}
+
+.nav-agendar {
+    background-color: #FF7043;
+    color: #fff;
+}
+
+.nav-criar {
+    background-color: transparent;
+    border: 2px solid #FF7043;
+    color: #FF7043;
+}
+
+.nav-buttons a:hover {
+    opacity: 0.9;
+}
+
+
+.logo {
+    width: 150px;
+}
+.success-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.success-icon {
+    width: 400px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    color: #FF7043;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    color: #666;
+}
+
+.success-details {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.success-details p {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.success-details strong {
+    color: #FF7043;
+}
+
+/* Botões */
+.btn-primary {
+    background-color: #FF7043;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 2px solid #FF7043;
+    color: #FF7043;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+    opacity: 0.8;
+}
+
+/* Rodapé */
+footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-logo img {
+    width: 
+    100px;
+}

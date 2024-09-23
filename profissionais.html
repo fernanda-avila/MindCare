@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profissionais - MindCare</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/profissionais.css">
+</head>
+<body>
+    <header class="nav-menu">
+        <a href="index.html"><img src="imgs/baixados (2).png" alt="Logo" class="logo"></a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Sobre Nós</a></li>
+            <li><a href="#">Profissionais Parceiros</a></li>
+        </ul>
+        <div class="nav-buttons">
+            <a href="login.html" class="nav-entrar">Entrar</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <aside>
+            <img src="imgs/Doctors-pana.png" alt="Imagem ilustrativa" class="aside-img">
+        </aside>
+
+        <div class="main-content">
+            <div class="descricao-profissionais">
+            <h1 class="titulo-profissionais">Profissionais parceiros do MindCare</h1>
+            <p class="subtitulo-profissionais">Conheça os profissionais que são nossos parceiros e encontre um que atenda suas necessidade!</p>
+            </div>
+            <div class="profissionais-lista">
+                <div class="card" onclick="selecionarProfissional('Ana Beatriz', 'https://img.cancaonova.com/cnimages/canais/uploads/sites/6/2018/03/formacao_1600x1200-como-a-presenca-da-mulher-pode-ser-harmonia-no-mundo.jpg', 'Especialista em transtornos de ansiedade e depressão. Oferece consultas presenciais e virtuais com foco no bem-estar emocional.')">
+                    <img src="https://img.cancaonova.com/cnimages/canais/uploads/sites/6/2018/03/formacao_1600x1200-como-a-presenca-da-mulher-pode-ser-harmonia-no-mundo.jpg" alt="Foto do profissional" class="profissional-img">
+                    <h3>Ana Beatriz</h3>
+                    <p class="especialidade">Psicóloga</p>
+                    <p class="descricao">Focada em saúde mental e desenvolvimento pessoal.</p>
+                    <a href="agendar.html"><button class="agendar-btn">Agendar</button></a>
+                </div>
+                <div class="card" onclick="selecionarProfissional('Pedro Mendes', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc23ymOjEfmy5kCaX0rn47s9CjaM0bMDOo-A&s', 'Atua em terapia comportamental, ajudando no desenvolvimento pessoal e na superação de traumas emocionais.')">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc23ymOjEfmy5kCaX0rn47s9CjaM0bMDOo-A&s" alt="Foto do profissional" class="profissional-img">
+                    <h3>Pedro Mendes</h3>
+                    <p class="especialidade">Terapeuta</p>
+                    <p class="descricao">Ajuda na superação de traumas e crescimento pessoal.</p>
+                    <a href="#"><button class="agendar-btn">Agendar</button></a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p class="copy">&copy; 2024 MindCare. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

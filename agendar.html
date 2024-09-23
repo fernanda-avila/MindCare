@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar - MindCare</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/agendar.css">
+</head>
+<body>
+    <header class="nav-menu">
+        <a href="index.html"><img src="imgs/baixados (2).png" alt="" class="logo"></a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Sobre Nós</a></li>
+            <li><a href="profissionais.html">Profissionais Parceiros</a></li>
+        </ul>
+        <div class="nav-buttons">
+            <a href="login.html" class="nav-entrar">Entrar</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <h1 id="form-title">Agendar Consulta</h1>
+            <div class="profissional-info">
+                <img id="profissional-foto" src="https://img.cancaonova.com/cnimages/canais/uploads/sites/6/2018/03/formacao_1600x1200-como-a-presenca-da-mulher-pode-ser-harmonia-no-mundo.jpg" alt="Foto do profissional" class="profissional-image">
+                <h3 id="profissional-nome">Dra. Ana Beatriz</h3>
+                <p id="profissional-descricao">Focada em saúde mental e desenvolvimento pessoal.</p>
+            </div>
+            <form id="agendamento-form" onsubmit="armazenarAgendamento(event)">
+                <div class="input-group">
+                    <label for="data-agendamento">Data</label>
+                    <input type="date" id="data-agendamento" required>
+                </div>
+                <div class="input-group">
+                    <label for="horario-agendamento">Horário</label>
+                    <select id="horario-agendamento" required>
+                        <option value="">Selecione</option>
+                        <option>15:15</option>
+                        <option>15:30</option>
+                        <option>15:45</option>
+                        <option>16:00</option>
+                        <option>16:15</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="duracao-agendamento">Duração (minutos)</label>
+                    <input type="number" id="duracao-agendamento" required>
+                </div>
+                <!-- Alteração feita: Removido o link <a> -->
+                <button type="submit" id="submit-btn">Agendar</button>
+            </form>
+        </div>
+        <aside>
+            <img src="imgs/Events-pana.png" alt="Imagem ilustrativa" class="aside-img">
+        </aside>
+    </div>
+
+    <footer>
+        <p class="copy">&copy; 2024 MindCare. Todos os direitos reservados.</p>
+        <ul class="footer-links">
+            <li><a href="#">Política de Privacidade</a></li>
+            <li><a href="#">Termos de Uso</a></li>
+        </ul>
+    </footer>
+
+    <script src="agendamento.js"></script>
+</body>
+</html>

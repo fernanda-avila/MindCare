@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo {
+    width: 150px;
+}
+
+.nav-menu {
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #F2F2F2;
+    padding: 20px;
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+    font-weight: 500;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-buttons a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.nav-entrar {
+    background-color: transparent;
+    color: #FF7043;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 50px 20px;
+}
+
+.content {
+    max-width: 600px;
+}
+
+.profissional-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profissional-image {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin-right: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.input-group input, .input-group select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.input-group input:focus {
+    border-color: #FF7043;
+    outline: none;
+}
+
+#submit-btn {
+    background: linear-gradient(135deg, #28A992, #0ea78b);
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+#submit-btn:hover {
+    background: linear-gradient(135deg, #0ea78b, #28A992);
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #f2f2f2;
+    color: #666;
+    padding: 20px;
+    text-align: center;
+}
+
+.aside-img {
+    width: 550px;
+}

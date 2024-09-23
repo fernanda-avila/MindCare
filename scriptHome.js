@@ -1,5 +1,4 @@
-import Swiper from 'swiper/bundle';
-import 'swiper/swiper-bundle.css';
+
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -22,18 +21,3 @@ document.addEventListener('aos:in', ({ detail }) => {
     }
 });
 
-// swiper
-
-
-const swiper = new Swiper('.swiper-container', {
-  // Configurações do Swiper
-  loop: true, // loop dos slides
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-});
